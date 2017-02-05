@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Vue example</title>
+
+	<style>
+		body, html {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		nav ul li {
+			display: inline-block;
+		}
+		nav ul li a {
+			display: block;
+			padding: 5px;
+		}
+		nav a.active, #users-page li a.active {
+			color: black;
+			pointer-events: none;
+			cursor: default;
+		}
+		a {
+			font-family: inherit;
+			text-decoration: none;
+			color: gray;
+		}
+		a:hover {
+			color: black;
+		}
+		#users-page {
+			position: relative;
+		}
+		#users-page ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			width: 300px;
+		}
+		#users-page ul li {
+			border-bottom: 1px dashed lightgray;
+			padding: 10px 5px;
+			display: flex;
+			justify-content: space-between;
+		}
+		#users-page .fetching {
+			position: absolute;
+			font-weight: bold;
+		}
+		.editing {
+			display: flex;
+		}
+		#edit-page {
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app"></div>
+
+	<script src="/build/bundles/vendor.bundle.js"></script>
+	<script src="/build/bundles/main.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+'use strict';
+
+export const REQUEST_USERS = 'REQUEST_USERS'
+export const REQUEST_USERS_SUCCESS = 'FETCH_USERS_SUCCESS'
+export const REQUEST_USERS_ERROR = 'FETCH_USERS_ERROR'
