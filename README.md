@@ -46,6 +46,6 @@ $ npm start
 
 [npm-version-image]: https://img.shields.io/npm/v/npm.svg?maxAge=2592000
 [dev-dep-image]: https://david-dm.org/JFusco/vue-router-vuex-example/dev-status.svg
-[dev-dep-url]: https://david-dm.org/JFusco/vue-router-vuex-example#info=devDependencies
+[dev-dep-url]: https://david-dm.org/JFusco/vue-router-vuex-example#info=dev
 [dep-image]: https://img.shields.io/david/JFusco/vue-router-vuex-example.svg
 [dep-url]: https://david-dm.org/JFusco/vue-router-vuex-example
