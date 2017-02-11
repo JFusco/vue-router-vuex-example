@@ -21,6 +21,6 @@ export default new Vuex.Store({
 		user,
 		loader
 	},
-	strict: debug,
+	strict: false,
 	middlewares: debug ? [createLogger()] : []
 })

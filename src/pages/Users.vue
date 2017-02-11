@@ -23,14 +23,17 @@
 			loader,
 			user
 		},
+
 		methods: {
 			...mapActions([
 				'getUsers'
 			])
 		},
+
 		mounted(){
 			this.getUsers(10);
 		},
+
 		computed: mapState([
 			'users',
 			'loader'
