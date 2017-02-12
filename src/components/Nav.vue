@@ -1,5 +1,5 @@
 <template>
-	<nav>
+	<nav v-once>
 		<ul role="menu">
 			<li role="presentation">
 				<router-link to="/" exact>home</router-link>

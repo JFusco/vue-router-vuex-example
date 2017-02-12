@@ -1,16 +1,18 @@
 <template>
 	<div>
-		Hello: {{user.firstName}} {{user.lastName}}
+		Hello: {{fullName}}
 	</div>
 </template>
 
 <script type="text/babel">
 	import Vue from 'vue'
-	import { mapState } from 'vuex'
+	import { mapGetters } from 'vuex'
 
 	export default Vue.component('app-header', {
-		computed: mapState([
-			'user'
-		])
+		computed: {
+			...mapGetters([
+				'fullName'
+			])
+		}
 	})
 </script>

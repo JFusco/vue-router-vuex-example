@@ -24,8 +24,15 @@ const mutations = {
 	}
 }
 
+const getters = {
+	fullName: state => {
+		return `${state.firstName} ${state.lastName}`
+	}
+}
+
 export default {
 	state,
 	mutations,
-	actions
+	actions,
+	getters
 }
