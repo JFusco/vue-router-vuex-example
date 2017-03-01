@@ -1,6 +1,8 @@
 <template>
 	<span>
-		{{data.name.title}} {{data.name.first}} {{data.name.last}} - {{data.gender}}
+		{{fullName}} - {{data.gender}}
+
+		<router-link :to="{name: 'userdetail', params: {id: data.id.value}}">user detail</router-link>
 	</span>
 </template>
 
@@ -12,6 +14,12 @@
 			data: {
 				type: Object,
 				required: true
+			}
+		},
+
+		computed: {
+			fullName(){
+				return `${this.data.name.title} ${this.data.name.first} ${this.data.name.last}`;
 			}
 		}
 	})

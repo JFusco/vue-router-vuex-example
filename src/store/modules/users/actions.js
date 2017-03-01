@@ -9,7 +9,7 @@ const actions = {
 	getUsers({ commit }, howMany) {
 		commit(type.REQUEST_USERS)
 		commit(SHOW_LOADER, {
-			message: 'Fetching users'
+			message: 'Fetching users...'
 		})
 
 		Vue.http.get(`https://randomuser.me/api/?results=${howMany}&nat=us&seed=2e0c669bcecbc7dd`)

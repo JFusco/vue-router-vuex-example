@@ -16,12 +16,14 @@
 <script type="text/babel">
 	import appHeader from '../components/Header.vue'
 	import appNav from '../components/Nav.vue'
-	import { mapActions, mapState } from 'vuex'
+	import popover from '../components/Popover.vue'
+	import { mapActions } from 'vuex'
 
 	export default {
 		components: {
 			appHeader,
-			appNav
+			appNav,
+			popover
 		},
 
 		methods: {

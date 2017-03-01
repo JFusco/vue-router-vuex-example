@@ -1,23 +1,17 @@
 <template>
 	<div>
-		<div v-if="show">{{message}}</div>
-		<div v-if="!show">Done loading</div>
+		<div v-if="loader.show">{{loader.message}}</div>
+		<div v-else>Done loading</div>
 	</div>
 </template>
 
 <script type="text/babel">
 	import Vue from 'vue'
+	import { mapActions, mapState } from 'vuex'
 
 	export default Vue.component('loader', {
-		props: {
-			message: {
-				type: String,
-				required: true
-			},
-			show: {
-				type: Boolean,
-				required: true
-			}
-		}
+		computed: mapState([
+			'loader'
+		])
 	})
 </script>

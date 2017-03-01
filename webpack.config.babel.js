@@ -32,12 +32,17 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				enforce: 'pre',
+				test: /.vue$/,
+				loader: 'eslint-loader',
+				exclude: /node_modules/
+			},
+			{
 				test: /\.vue$/,
 				loader: 'vue-loader',
 				options: {
 					loaders: {
-						'scss': 'vue-style-loader!css-loader!sass-loader',
-						'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
+						'sass': 'vue-style-loader!css-loader!sass-loader'
 					}
 				}
 			},
@@ -57,7 +62,8 @@ module.exports = {
 	},
 	resolve: {
 		alias: {
-			'vue$': 'vue/dist/vue.common.js'
+			'vue$': 'vue/dist/vue.common.js',
+			'styles': path.resolve(__dirname, 'src/scss')
 		}
 	},
 	devServer: {
